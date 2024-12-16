@@ -5,7 +5,10 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "curl -sL https://aka.ms/InstallAzureCLIDeb | bash && az --version",
+  "postCreateCommand": "",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
   "customizations": {
     "codespaces": {
       "openFiles": []
